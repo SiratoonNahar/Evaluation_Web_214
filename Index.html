@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+
+            <!-- <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="coinswitch" id="logo"> -->
+            <ul>
+                <li class="logo"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAACUCAMAAAATdsOFAAAAZlBMVEX///8AAAD39/ft7e309PTo6Og0NDSJiYnX19dLS0uGhoampqZQUFCenp78/Pzh4eFfX1+xsbEpKSl+fn7R0dG6uro6OjqTk5PFxcXLy8sjIyNAQEBycnIuLi4VFRUcHBwMDAxnZ2ctQTYVAAAFrElEQVR4nO2YabOjKhCGXSMugPsSjYn//09eaECI0ZwzU3VrvvQzVSfSLL42DTTjeQiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAjyjwnb6HsDfm4OSPzX7wyWpllCz8uXZcnZxwtFbfaDKAkZ2+lCnGZJzqzh2LbTL5V+EPkC8eWZ+MmCY20rrI/w50HiKqz4x4c7UN9vT8yiX87/1u9GenIp/fYb6V3Xko/eFj77fnFSz8exC/+pdI9X4t91NRNO99fqsyLseEf+RK6LGzDNX0tnYRh+iZfwKd+ynQwk+n2ZrO8Y6Xyaps9o/a30H+h8YPxTbTEnnIvXR5zz2IgLYlHiwlNGesjjeNeoa4/SQ2mNhZd0rYCJ0acWjJ7tHR18kCrpw8HBUfht8wqr5i57lVU8ip9ZtQ2mpJfWlJJAS29swERd9oA+OeeOdJIX0nrLOg90gG2YQdRjcPaPsV/oSBz1TCn3e3dB8jFv0vxa+bT5hmKRf0A6z3Zrn3wsU7LstWmzSw/yeTdntfhDhbG77baHXYRtDV07azCN7IqcEumHp21zxBla65fS4/lgfZM+HWtBOmteB7OQ3r3ZdhlxCeVnaWaCmibm8/gC0+rPl7vSCAt7rev66UiPVvn0utf1/UQ6uAz6mFqQ3sCj6FOvu3SQ+Fo60m3SkO46EjNuo2Jtn8YMisFgyuWV8lDOybrIgzYe7rt0eE/ZiViMTBBY6QF4bBuhz22XPsLDIJWM5aqlT/Jj1K6Rv1y35/tMpOD49E2qM+nDlfRK1uZ6VY9GOpG/i17avDhIh2ZmJ2gfWjqTi7rXyUaUvZR02famwpeVj77eUyC+a/VX2ak3pVkUiBPEl+eofPG2lzotHVbr3oev79LlW4p9c5i0dIi83alRYaX7m9LOCXFywM2qW0W3ei+IIZ+2Lr1SDju2PU6iEqQHhatCB7GVLkt2H2Cbkt44E+XpGaQegUl5zMtwTAJIbqkir6s0nRd0toZeL1I5rlOWEVgEMhHqnbSBuNKZLNXOwdEp6XKm3AxESXdiWnzZ+1EcBTsRY/YptBVfjqPuLV5UuQhaEWqF87lv6ReTEVI60glID7aD9FVJZ9TZHdfc6RfO6c6cV7rUV3lv7el1vjYeoklJJ727jYn1/uH11JEwffW6GDPrrXY3RXEnxB8+HqBwnXfJQ9y3RTaA9FiufudiUr1JD2XJGZJa6dRag126F3DS5Y3aNDYnBFhLLPHHg+RLwEDmYH0F7hU7jFytiY3L2+cytSJBo5Auv6C3UzW8t/IYmx7ve4IgjEONyLJOuBbuqRT8ZXYsddYI6TCVZm6ZOvisdFBlRLJFS4/vvnMRmWolnZZlafKnQQ9j0UfGBc/vN1kiV1M/qpxKneRCOgMHdfDV8bAepIPI++hmafI0hd4JvC6qVHhTcMKsPZ18eN0Ll6I8YZMs35Wr6PbvYtulmT58ZSIA54y/DHmeGMc4OQxMyir65Jk+E6X0CPKINKHVsOgkhnqtPF0gxwpzWV8egiCSVwCH2MRPHP94M4o29RaTMenMUa/+l93ZHOmsOfaB9MvkrdZMPQaz8ijKIoWhTjLYjubyKMrHUZxNRD6Lk+jkjnqCTb2F+410r3K24/ogXTyt77UqXydOLnx/gXQv3Jzh/eHscto9YbREbGRUTej9y/XijarUuWtK5b6eqjklOl/254Vr6c61eix10jEnMrhqFcLhoAPoURJz1YiaPW++0YsgaJOteDResnlJXWzJ2f/GXBB1NGkymWXwgdLKeGakg7DmIiMQ1kF80DjQYdS1bMyTphkqItYxpbkJYS7WTJPkohUVfdTZMA5LMadbRr9IYvHUigyAkZN7+w+w6Mwh51Zbe7rxBscLs7pr/7zsEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARB/kf+A74ySrJBRvVtAAAAAElFTkSuQmCC"
+                        alt="logo_img"></li>
+                <div class="nav_sec_right">
+                    <li><a href="#home">SUMMER'24</a></li>
+                    <li><a href="#news">TOPWEAR</a></li>
+                    <li><a href="#contact">BOTTOMWEAR</a></li>
+                    <li><a class="active" href="#about">SHOES & ACCESSORIES</a></li>
+                    <li><a href="#contact">RESTOCKED</a></li>
+                    <li><a href="#contact">THEMES</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#contact"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+
+        <div class="img_section">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_Banner__1_ycCzHWB.jpg?format=webp&w=1500&dpr=1.3"
+                alt="banner-images">
+
+        </div>
+    </main>
+    <div class="container">
+
+
+        <section class="main-content">
+            <aside class="sidebar">
+                <h3>Products</h3><input type="text" placeholder="Search for Products">
+                <ul>
+                    <li><input type="checkbox"> Women Boyfriend Shirts</li>
+                    <li><input type="checkbox"> Women Bralette</li>
+                    <li><input type="checkbox"> Women Cargo Jeans</li>
+                    <li><input type="checkbox"> Women Cargo Joggers</li>
+                    <li><input type="checkbox"> Women Cropped Tops</li>
+                    <li><input type="checkbox"> Women Denim Jackets</li>
+                    <li><input type="checkbox"> Women Jeans</li>
+                    <li><input type="checkbox"> Women Joggers</li>
+                    <li><input type="checkbox"> Women Oversized Cropped T-Shirts</li>
+                    <li><input type="checkbox"> Women Oversized Shirt Dresses</li>
+                    <li><a href="#">+6 more</a></li>
+                </ul>
+            </aside>
+            <div class="product-display">
+                <div class="product-sort">
+                    <p>Restocked Womenswear - 43 items</p><select>
+                        <option value="default">Select Sorting Options</option>
+                        <option value="priceLowHigh">Price: Low to High</option>
+                        <option value="priceHighLow">Price: High to Low</option>
+                        <option value="newArrivals">New Arrivals</option>
+                    </select>
+                </div>
+                <div class="product-section">
+                    <div class="product"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_1_NMLfg9W.jpg?format=webp&w=360&dpr=1.5" alt="Product 1">
+                        <div class="product-info">
+                            <h3>Product 1</h3>
+                            <p>Women Bralette</p>
+                            <p>₹699 MRP incl. of all taxes</p><button><img src="data:image/png;base64,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" alt="Wishlist"> Add to
+                                Wishlist</button>
+                        </div>
+                    </div>
+                    <div class="product"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_7_Q1nfyjY.jpg?format=webp&w=360&dpr=1.5" alt="Product 2">
+                        <div class="product-info">
+                            <h3>Product 2</h3>
+                            <p>Women Boyfriend Shirts</p>
+                            <p>₹1399 MRP incl. of all taxes</p><button><img src="data:image/png;base64,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" alt="Wishlist"> Add to
+                                Wishlist</button>
+                        </div>
+                    </div>
+                    <div class="product"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_4_eVE7L7G.jpg?format=webp&w=360&dpr=1.5" alt="Product 3">
+                        <div class="product-info">
+                            <h3>Product 3</h3>
+                            <p>Women Pants</p>
+                            <p>₹1999 MRP incl. of all taxes</p><button><img src="data:image/png;base64,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" alt="Wishlist"> Add to
+                                Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="products">
+                <div class="headings">
+                    <h1>Fresh From the blog -></h1>
+                </div>
+
+                <div class="carts">
+                    <div class="cart">
+                        <img src="https://i.etsystatic.com/inv/0fa079/6133229703/inv_620x495.6133229703_97i1qzqq.jpg?version=0"
+                            alt="stock_market">
+                        <div class="paragraph_content">
+                            <p>Style</p>
+                            <p class="para_header">6 ways to personalise any outfit</p>
+
+                            <p>
+                                <span>From bespoke hats to beautifully crafted bags, these customised closet staples
+                                    will put a fresh spin on your signature style.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <img src="https://i.etsystatic.com/inv/b442d9/6117514577/inv_425x340.6117514577_r3vu63hi.jpg?version=0"
+                            alt="network">
+                        <div class="paragraph_content">
+                            <p>Style</p>
+                            <p class="para_header">Embrace your inner poet: shop trending romantic and dark-academia
+                                style</p>
+
+                            <p>
+                                <span>Poets seek out beauty in all things, and so do we! Discover poetical clothing,
+                                    decor, and writer’s materials.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <img src="https://i.etsystatic.com/inv/80afce/6067059588/inv_425x340.6067059588_tarwcuje.jpg?version=0"
+                            alt="stock_increase">
+                        <div class="paragraph_content">
+                            <p>Inspiration</p>
+
+                            <p class="para_header">The ultimate summer wedding guest guide</p>
+                            <p>
+                                <span>Save-the-date! Bookmark the best from local sellers on Etsy for meaningful and
+                                    personalised wedding gifts – and some fashionable finds for you as well!</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form><label for="name">Name *</label><input type="text" name="name" id="name"
+                    placeholder="Your Name"><label for="email">Email *</label><input type="email" name="email"
+                    id="email" placeholder="Your Email"><label for="telephone">Telephone</label><input type="text"
+                    name="telephone" id="telephone" placeholder="Your Telephone"><label for="comment">Comment
+                    *</label><textarea name="comment" id="comment" rows="4"
+                    placeholder="Your Comment"></textarea><button type="submit">Submit</button></form>
+        </div>
+        <div class="contact-info">
+            <p>We at Sunflame rejoice every opportunity which helps us to keep in touch with our customers. So, you can
+                reach us as per your convenience by phone, email or through personal visit to our office.</p>
+            <address><strong>Sunflame Enterprises Private Limited</strong><br> 58, Sector 27C, Mathura Road, Faridabad -
+                121 003, Haryana, India<br><a href="tel:+911294266999">+91-129-4266999</a><br><a
+                    href="mailto:enquiry@sunflame.com">enquiry@sunflame.com</a></address>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/d22d53dd15.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
